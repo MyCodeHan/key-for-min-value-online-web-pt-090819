@@ -15,14 +15,17 @@ def key_for_min_value(name_hash)
   #started iterating. So then we make the 
   #current_min_val equal to value (the val itera-
   #tion we're on, and take the assoc'd key)
+    
     if current_minimum_val == nil 
       current_minimum_val = value 
       current_key_assoc_w_min_val = key 
+   
     else 
     #we keep iterating and if the current min val
     #i greater than our old value we replace it
     #with the new lower value and return the assoc'd
     #key. 
+    
       if current_minimum_val > value 
         current_minimum_val = value
         current_key_assoc_w_min_val = key 
